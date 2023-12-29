@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section>
+    <section class="timer-section">
       <a href="./index.html">Go to home</a>
-      <h1>Welcome to timer page</h1>
-      <input type="text" id="datetime-picker" />
-      <button type="button" data-start>Start</button>
-
+      <div class="date-input">
+        <input type="text" id="datetime-picker" />
+        <button type="button" data-start>Start</button>
+      </div>
       <div class="timer">
         <div class="field">
           <span class="value" data-days>00</span>
@@ -33,5 +33,6 @@
         </div>
       </div>
     </section>
+    <script src="./js/1-timer.js" type="module"></script>
   </body>
 </html>
