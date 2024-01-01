@@ -10,31 +10,32 @@
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-ec808ebb.js">
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-651d7991.js">
     <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-80d0dc0f.css">
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-67a92443.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-97af49a0.css">
   </head>
   <body>
     <section>
-      <a href="./index.html">Go to home</a>
+      <a href="./index.html" class="home-link">Go to home</a>
 
       <form class="form">
-        <label>
+        <label class="delay-input-label">
           Delay (ms)
-          <input type="number" name="delay" required />
+          <input class="delay-input" type="number" name="delay" required />
         </label>
+        <div class="fieldset-container">
+          <fieldset class="radio-field">
+            <legend>State</legend>
+            <label>
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label>
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <legend>State</legend>
-          <label>
-            <input type="radio" name="state" value="fulfilled" required />
-            Fulfilled
-          </label>
-          <label>
-            <input type="radio" name="state" value="rejected" required />
-            Rejected
-          </label>
-        </fieldset>
-
-        <button type="submit">Create notification</button>
+          <button class="form-button" type="submit">Create notification</button>
+        </div>
       </form>
     </section>
     
