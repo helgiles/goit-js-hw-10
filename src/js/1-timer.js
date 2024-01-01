@@ -31,7 +31,6 @@ const options = {
       startBtn.disabled = false;
       userSelectedDate = selectedDates[0];
     }
-    // console.log(selectedDates[0]);
   },
 };
 
